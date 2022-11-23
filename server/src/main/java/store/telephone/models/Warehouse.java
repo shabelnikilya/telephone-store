@@ -10,11 +10,9 @@ import java.util.List;
 @NoArgsConstructor
 @Getter
 @Setter
-public class Store {
+public class Warehouse {
     private int id;
     private String name;
-    private Warehouse warehouse;
-    private List<Employee> employees;
     private Address address;
-    private List<Currency> currencies;
+    private List<ElectronicTechnology> electronicTechnologies;
 }
