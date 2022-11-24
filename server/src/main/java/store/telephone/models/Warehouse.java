@@ -11,6 +11,7 @@ import java.util.List;
 @Getter
 @Setter
 public class Warehouse {
+
     private int id;
     private String name;
     private Address address;
