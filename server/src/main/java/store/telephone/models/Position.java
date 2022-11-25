@@ -11,6 +11,6 @@ public enum Position {
     MIDDLE_STAFF("Старший продавец", new BigDecimal(1500)),
     SENIOR_STAFF("Директор", new BigDecimal(2000));
 
-    private String namePosition;
-    private BigDecimal salary;
+    private final String namePosition;
+    private final BigDecimal salary;
 }

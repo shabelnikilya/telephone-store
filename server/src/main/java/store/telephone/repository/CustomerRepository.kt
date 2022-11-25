@@ -1,14 +1,14 @@
 package store.telephone.repository
 
-interface CustomerRepository {
+interface CustomerRepository<T> {
 
     // todo добавить Customer
 
-    fun saveCustomer(): Long
+    fun saveCustomer(t: T): Long
 
-    fun findCustomerById(id: Long)
+    fun findCustomerById(id: Long): T
 
-    fun findAllCustomers()
+    fun findAllCustomers(): List<T>
 
-    fun removeCustomer(id: Long)
+    fun removeCustomer(id: Long): Boolean
 }

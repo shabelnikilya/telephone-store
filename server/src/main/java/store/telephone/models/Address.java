@@ -11,6 +11,7 @@ import lombok.Setter;
 @Setter
 public class Address {
 
+    private String country;
     private String city;
     private String nameStreet;
     private int index;

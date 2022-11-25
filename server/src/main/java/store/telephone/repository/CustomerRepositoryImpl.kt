@@ -1,20 +1,22 @@
 package store.telephone.repository
 
-class CustomerRepositoryImpl: CustomerRepository {
+import store.telephone.models.Customer
 
-    override fun saveCustomer(): Long {
+class CustomerRepositoryImpl: CustomerRepository<Customer> {
+
+    override fun saveCustomer(t: Customer): Long {
         TODO("Not yet implemented")
     }
 
-    override fun findCustomerById(id: Long) {
+    override fun findCustomerById(id: Long): Customer {
         TODO("Not yet implemented")
     }
 
-    override fun findAllCustomers() {
+    override fun findAllCustomers(): List<Customer> {
         TODO("Not yet implemented")
     }
 
-    override fun removeCustomer(id: Long) {
+    override fun removeCustomer(id: Long): Boolean {
         TODO("Not yet implemented")
     }
 }
